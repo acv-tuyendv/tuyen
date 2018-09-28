@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <data>
+        <variable
+            name="city"
+            type="com.example.acv.area.CityItem"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/background_item_area">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:button="@drawable/xml_advanced_search_checkbox"
+            android:paddingStart="9dp"
+            android:text="ABCXA"
+            android:textColor="#161616"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/checkBox"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="7dp"
+            android:gravity="center_vertical"
+            android:text="(123456)"
+            android:textColor="#161616"
+            android:textSize="14sp" />
+    </android.support.constraint.ConstraintLayout>
+</layout>
